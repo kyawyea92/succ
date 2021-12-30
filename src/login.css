@@ -1,0 +1,18 @@
+.mainDev{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.inputDiv{
+   width: 100%; 
+   margin-top: 20px;
+}
+
+
+.extraDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
