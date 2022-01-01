@@ -1,0 +1,23 @@
+.titleBarMainDiv{
+    height: 10em;
+}
+
+.firstDiv{
+    height: 5em;
+}
+
+.titleBarLogoDiv{
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.searchInputDiv{
+    padding-top: 1.5em !important;
+}
+.titlemenuBarDiv{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: teal;
+}

@@ -1,0 +1,9 @@
+.footerMainDiv{
+    height: 3em;
+    background-color: #008080;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 3em;
+}
