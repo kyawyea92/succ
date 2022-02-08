@@ -2,11 +2,11 @@ import React from "react";
 import './login.css';
 import { Input, Button, Card } from 'semantic-ui-react'
 import { Link } from "react-router-dom";
-const Login = () => {
+const ForgetPassword = () => {
     return (
         <div className="mainDev">
             <Card 
-            header='Login'
+            header='Forget Password?'
             description={loginInput}
             >
                
@@ -19,19 +19,16 @@ const loginInput = () => {
     return (
         <div >
             <div >
-                <Input placeholder='Email' className="inputDiv" />
-            </div>
-            <div >
-                <Input placeholder='Password' className="inputDiv" />
+                <Input placeholder='Please enter your email' className="inputDiv" />
             </div>
             <div className="inputDiv">
-                <Button color= 'teal' basic >Login</Button>
+                <Button basic color="teal" >Search</Button>
             </div>
             <div className="extraDiv">
-                <div className="extraInput"><Link to="/forget-password">Forget Password</Link></div>
+                <div className="extraInput"><Link to="/login">Log In</Link></div>
                 <div className="extraInput"><Link to="/signup">Sign Up!!!</Link></div>
             </div>
         </div>
     );
 }
-export default Login;
+export default ForgetPassword;

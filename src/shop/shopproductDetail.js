@@ -1,10 +1,9 @@
 import React from 'react';
 import {  Menu, Segment, Container } from 'semantic-ui-react'
-import ItemReviews from '../navigation/itemreviews';
-import ProductDetailNav from '../navigation/productdetailsnav';
-import ShopInfoNav from '../navigation/shopinfonav';
+import ItemReviews from '../shopnavigation/itemreviews';
+import ProductDetailNav from '../shopnavigation/productdetailsnav';
 
-export default class ProductDetail extends React.Component {
+export default class ShopProductDetail extends React.Component {
     state = { activeItem: 'Product Details' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -14,8 +13,6 @@ export default class ProductDetail extends React.Component {
         
         if(activeItem ==='Product Details'){
             navView = <ProductDetailNav/>
-        }else if(activeItem ==='Shop Info'){
-            navView = <ShopInfoNav/>
         }else{
             navView = <ItemReviews/>
         }
@@ -27,12 +24,6 @@ export default class ProductDetail extends React.Component {
                         <Menu.Item
                             name='Product Details'
                             active={activeItem === 'Product Details'}
-                            color='teal'
-                            onClick={this.handleItemClick}
-                        />
-                        <Menu.Item
-                            name='Shop Info'
-                            active={activeItem === 'Shop Info'}
                             color='teal'
                             onClick={this.handleItemClick}
                         />

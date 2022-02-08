@@ -9,9 +9,15 @@
 .titleBarLogoDiv{
     display: flex !important;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    color: teal;
 }
+.cartDiv{
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
 
+}
 .searchInputDiv{
     padding-top: 1.5em !important;
 }

@@ -1,0 +1,10 @@
+.profileUserDataDiv{
+    width: 50%;
+}
+
+.profileUserDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 2em;
+}
